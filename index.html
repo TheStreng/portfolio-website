@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaan Demis Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <section class="left-nav">
+                <a href="#C1">
+                    <img class="logo" src="Images/3DLogo.gif" alt="KD Logo">
+                </a>
+            </section>
+            <section class="mid-nav btn" id="navbar">
+                <a href="#C1">Home</a>
+                <a href="#C2">Projects</a>
+                <a href="#C3">About</a>
+                <a href="#C4">Contact</a>
+            </section>
+            <section class="right-nav btn">
+                <a href="#">
+                    <span class="fi fi-us"></span>
+                    en
+                </a>
+                <a href="#">
+                    <svg class="svg-settings" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <path d="M23 29C26.3137 29 29 26.3137 29 23C29 19.6863 26.3137 17 23 17C19.6863 17 17 19.6863 17 23C17 26.3137 19.6863 29 23 29Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M37.8 29C37.5338 29.6032 37.4544 30.2724 37.572 30.9212C37.6896 31.57 37.9989 32.1686 38.46 32.64L38.58 32.76C38.9519 33.1315 39.2469 33.5726 39.4482 34.0582C39.6495 34.5438 39.7531 35.0643 39.7531 35.59C39.7531 36.1157 39.6495 36.6362 39.4482 37.1218C39.2469 37.6074 38.9519 38.0485 38.58 38.42C38.2085 38.7919 37.7674 39.0869 37.2818 39.2882C36.7962 39.4895 36.2757 39.5931 35.75 39.5931C35.2243 39.5931 34.7038 39.4895 34.2182 39.2882C33.7326 39.0869 33.2915 38.7919 32.92 38.42L32.8 38.3C32.3286 37.8389 31.73 37.5296 31.0812 37.412C30.4324 37.2944 29.7632 37.3738 29.16 37.64C28.5685 37.8935 28.064 38.3145 27.7086 38.8511C27.3533 39.3877 27.1626 40.0164 27.16 40.66V41C27.16 42.0609 26.7386 43.0783 25.9884 43.8284C25.2383 44.5786 24.2209 45 23.16 45C22.0991 45 21.0817 44.5786 20.3316 43.8284C19.5814 43.0783 19.16 42.0609 19.16 41V40.82C19.1445 40.158 18.9302 39.516 18.545 38.9774C18.1598 38.4388 17.6215 38.0286 17 37.8C16.3968 37.5338 15.7276 37.4544 15.0788 37.572C14.43 37.6896 13.8314 37.9989 13.36 38.46L13.24 38.58C12.8685 38.9519 12.4274 39.2469 11.9418 39.4482C11.4562 39.6495 10.9357 39.7531 10.41 39.7531C9.88434 39.7531 9.36383 39.6495 8.87824 39.4482C8.39265 39.2469 7.95149 38.9519 7.58 38.58C7.20809 38.2085 6.91306 37.7674 6.71176 37.2818C6.51046 36.7962 6.40685 36.2757 6.40685 35.75C6.40685 35.2243 6.51046 34.7038 6.71176 34.2182C6.91306 33.7326 7.20809 33.2915 7.58 32.92L7.7 32.8C8.16107 32.3286 8.47037 31.73 8.58801 31.0812C8.70565 30.4324 8.62623 29.7632 8.36 29.16C8.10647 28.5685 7.68551 28.064 7.14893 27.7086C6.61235 27.3533 5.98357 27.1626 5.34 27.16H5C3.93913 27.16 2.92172 26.7386 2.17157 25.9884C1.42143 25.2383 1 24.2209 1 23.16C1 22.0991 1.42143 21.0817 2.17157 20.3316C2.92172 19.5814 3.93913 19.16 5 19.16H5.18C5.84199 19.1445 6.48401 18.9302 7.0226 18.545C7.56119 18.1598 7.97143 17.6215 8.2 17C8.46623 16.3968 8.54565 15.7276 8.42801 15.0788C8.31037 14.43 8.00107 13.8314 7.54 13.36L7.42 13.24C7.04809 12.8685 6.75306 12.4274 6.55176 11.9418C6.35046 11.4562 6.24685 10.9357 6.24685 10.41C6.24685 9.88434 6.35046 9.36383 6.55176 8.87824C6.75306 8.39265 7.04809 7.95149 7.42 7.58C7.79149 7.20809 8.23265 6.91306 8.71824 6.71176C9.20383 6.51046 9.72434 6.40685 10.25 6.40685C10.7757 6.40685 11.2962 6.51046 11.7818 6.71176C12.2674 6.91306 12.7085 7.20809 13.08 7.58L13.2 7.7C13.6714 8.16107 14.27 8.47037 14.9188 8.58801C15.5676 8.70565 16.2368 8.62623 16.84 8.36H17C17.5915 8.10647 18.096 7.68551 18.4514 7.14893C18.8067 6.61235 18.9974 5.98357 19 5.34V5C19 3.93913 19.4214 2.92172 20.1716 2.17157C20.9217 1.42143 21.9391 1 23 1C24.0609 1 25.0783 1.42143 25.8284 2.17157C26.5786 2.92172 27 3.93913 27 5V5.18C27.0026 5.82357 27.1933 6.45235 27.5486 6.98893C27.904 7.52551 28.4085 7.94647 29 8.2C29.6032 8.46623 30.2724 8.54565 30.9212 8.42801C31.57 8.31037 32.1686 8.00107 32.64 7.54L32.76 7.42C33.1315 7.04809 33.5726 6.75306 34.0582 6.55176C34.5438 6.35046 35.0643 6.24685 35.59 6.24685C36.1157 6.24685 36.6362 6.35046 37.1218 6.55176C37.6074 6.75306 38.0485 7.04809 38.42 7.42C38.7919 7.79149 39.0869 8.23265 39.2882 8.71824C39.4895 9.20383 39.5931 9.72434 39.5931 10.25C39.5931 10.7757 39.4895 11.2962 39.2882 11.7818C39.0869 12.2674 38.7919 12.7085 38.42 13.08L38.3 13.2C37.8389 13.6714 37.5296 14.27 37.412 14.9188C37.2944 15.5676 37.3738 16.2368 37.64 16.84V17C37.8935 17.5915 38.3145 18.096 38.8511 18.4514C39.3877 18.8067 40.0164 18.9974 40.66 19H41C42.0609 19 43.0783 19.4214 43.8284 20.1716C44.5786 20.9217 45 21.9391 45 23C45 24.0609 44.5786 25.0783 43.8284 25.8284C43.0783 26.5786 42.0609 27 41 27H40.82C40.1764 27.0026 39.5477 27.1933 39.0111 27.5486C38.4745 27.904 38.0535 28.4085 37.8 29Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-base"></div>
+            <div class="grid-hover" id="gridHover"></div>
+        </div>
+        
+        <section class="hero-section" id="C1">
+            <p class="based-text">Based in Hannover, Germany</p>
+            <p class="big-header">Next-Level <span>Software & Web Development</span> Flow</p>
+            <p class="about-me-text">Hi, I'm Kaan. I develop high-quality software and web applications with a strong focus on detail and user experience.</p>
+            <div class="hero-btns">
+                <a class="btn solo-btn" href="#C2">
+                    See My Projects
+                    <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                    <path d="M10 8L1.89189 16L-8.15946e-08 14.1333L6.21622 8L-6.17788e-07 1.86667L1.89189 -8.26972e-08L10 8Z"/>
+                    </svg>
+                </a>
+                <a class="cv-container" href="Downloads/Website_Lebenslauf.pdf" download="Kaan-Demis_CV.pdf">
+                    <svg class="svg-download" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M17 11.6667V15.2222C17 15.6937 16.8127 16.1459 16.4793 16.4793C16.1459 16.8127 15.6937 17 15.2222 17H2.77778C2.30628 17 1.8541 16.8127 1.5207 16.4793C1.1873 16.1459 1 15.6937 1 15.2222V11.6667M4.55556 7.22222L9 11.6667M9 11.6667L13.4444 7.22222M9 11.6667V1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Download CV
+                </a>
+            </div>
+        </section>
+
+        <section class="current-technologies" id="C3">
+            <p class="header-text">Current technologies</p>
+            <p class="description-text">I work with a versatile stack of modern technologies that allow me to craft powerful and efficient digital experiences.<br>Here are some of the key tools I rely on.</p>
+            <div class="tech-section">
+                <p class="sub-header-text">Programming languages</p>
+                <div class="all-tech-container no-select">
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(18, 88%, 55%, 0.2);">
+                            <img src="Images/Logos/HTML5_Logo.png" alt="HTML5 Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">HTML5</p>
+                            <p class="tool-description">Markup language for websites</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(222, 88%, 55%, 0.2);">
+                            <img src="Images/Logos/CSS3_Logo.png" alt="CSS3 Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">CSS3</p>
+                            <p class="tool-description">Web design styling language</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(50, 96%, 56%, 0.2);">
+                            <img src="Images/Logos/Javascript_Logo.png" alt="Javascript Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Javascript</p>
+                            <p class="tool-description">Web interactivity and logic</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(315.3, 42.7%, 48.6%, 0.2);">
+                            <img src="Images/Logos/c-sharp.png" alt="C# Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">C#</p>
+                            <p class="tool-description">Backend logic and applications</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(23.6, 69.4%, 52.5%, 0.2);">
+                            <img src="Images/Logos/Sql_data_base_with_logo.png" alt="SQL Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">SQL</p>
+                            <p class="tool-description">Database management</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(0, 0%, 100%, 0.1);">
+                            <img src="Images/Logos/Verse_Logo.png" alt="Javascript Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Verse</p>
+                            <p class="tool-description">Fortnite's logic language</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-section">
+                <p class="sub-header-text">Applications</p>
+                <div class="all-tech-container no-select">
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(201, 89%, 54%, 0.2);">
+                            <img src="Images/Logos/Visual_Studio_Code_Logo.png" alt="Visual Studio Code Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Visual Studio Code</p>
+                            <p class="tool-description">Code editor</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(157, 91%, 43%, 0.2);">
+                            <img src="Images/Logos/Figma-logo.svg" alt="Figma Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Figma</p>
+                            <p class="tool-description">Design Tool</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(0, 0%, 100%, 0.1);">
+                            <img src="Images/Logos/321-3211558_unreal-logo-png-for-kids-unreal-engine-icon.png" alt="Unreal Engine Logo" style="filter: brightness(0) invert(1);">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Unreal Engine</p>
+                            <p class="tool-description">Game Development Engine</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(0, 0%, 100%, 0.1);">
+                            <img src="Images/Logos/unity-69-logo-png-transparent.png" alt="Unity Logo" style="filter: brightness(0) invert(1);">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Unity</p>
+                            <p class="tool-description">Game Development Engine</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(186, 100%, 50%, 0.2);">
+                            <img src="Images/Logos/Roblox_Studio_Logo.png" alt="Roblox Studio Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Roblox Studio</p>
+                            <p class="tool-description">Roblox game editor</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(29, 90%, 56%, 0.2)">
+                            <img src="Images/Logos/Fl_Studio_Logo.png" alt="FL Studio Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">FL Studio</p>
+                            <p class="tool-description">Music production software</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-section">
+                <p class="sub-header-text">Adobe applications</p>
+                <div class="all-tech-container no-select">
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(205, 100%, 60%, 0.2);">
+                            <img src="Images/Logos/Photoshop_Logo.png" alt="Photoshop Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Photoshop</p>
+                            <p class="tool-description">Image editing software</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(240, 100%, 80%, 0.2);">
+                            <img src="Images/Logos/PremierePro_Logo.png" alt="Premiere Pro Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Premiere Pro</p>
+                            <p class="tool-description">Video editing software</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(345, 100%, 60%, 0.2);">
+                            <img src="Images/Logos/InDesign_Logo.png" alt="InDesign Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">InDesign</p>
+                            <p class="tool-description">Print and digital design</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(36, 100%, 50%, 0.2);">
+                            <img src="Images/Logos/Illustrator_Logo.png" alt="Illustrator Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Illustrator</p>
+                            <p class="tool-description">Logo and icon design</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(240, 100%, 80%, 0.2);">
+                            <img src="Images/Logos/Media_Encoder_Logo.png" alt="Media Encoder Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Media Encoder</p>
+                            <p class="tool-description">Video encoding software</p>
+                        </div>
+                    </div>
+                    <div class="tech-container">
+                        <div class="logo-container" style="background-color: hsla(240, 100%, 80%, 0.2);">
+                            <img src="Images/Logos/Audition_Logo.png#" alt="Audition Logo">
+                        </div>
+                        <div class="tool-container">
+                            <p class="tool-name">Audition</p>
+                            <p class="tool-description">Audio editor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="C2">
+            <div class="header-container">
+                <p class="header-text">Portfolio</p>
+                <div class="select-menu no-select">
+                    <div class="select-btn">
+                        <p>Software & Web Development</p>
+                        <svg width="1.2rem" height="1.2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <ul class="options">
+                        <li class="active-option">Software & Web Development</li>
+                        <li>Graphic & Media Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mockup-section active-section display-grid">
+                <div class="mockup-container">
+                    <a href="Work/Deads-Anatomy.html" class="image-wrapper">
+                        <img src="Images/Mockups/Mockup_DeadsAnatomy.png" alt="Dead's Anatomy Mockup">
+                    </a>
+                    <p class="sub-header-text portfolio-title">Dead's Anatomy</p>
+                    <div class="tag-container no-select">
+                        <p>C#</p>
+                        <p>UE Blueprints</p>
+                        <p>Unreal Engine</p>
+                        <p>Photoshop</p>
+                    </div>
+                    <a class="continue-btn" href="Work/Deads-Anatomy.html">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mockup-container">
+                    <a href="/Work/Rotten-Cucumbers.html" class="image-wrapper">
+                        <img src="Images/Mockups/Mockup_RottenCucumbers.png" alt="Rotten Cucumbers Mockup">
+                    </a>
+                    <p class="sub-header-text portfolio-title">Rotten Cucumbers</p>
+                    <div class="tag-container no-select">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                        <p>Figma</p>
+                        <p>VS Code</p>
+                    </div>
+                    <a class="continue-btn" href="/Work/Rotten-Cucumbers.html">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mockup-container">
+                    <a href="/Work/Kaffeeklatsch.html" class="image-wrapper">
+                        <img src="Images/Mockups/Mockup_Kaffeeklatsch.png" alt="Kaffeeklatsch Mockup">
+                    </a>
+                    <p class="sub-header-text portfolio-title">Kaffeeklatsch</p>
+                    <div class="tag-container no-select">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Figma</p>
+                        <p>VS Code</p>
+                    </div>
+                    <a class="continue-btn" href="/Work/Kaffeeklatsch.html">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mockup-section">
+                <div class="mockup-container">
+                    <a href="/Work/FingerPrint.html" class="image-wrapper">
+                        <img src="Images/Mockups/Mockup_Movie_FLyer.png" alt="FingerPrint Flyer Mockup">
+                    </a>
+                    <p class="sub-header-text portfolio-title">FingerPrint Poster</p>
+                    <div class="tag-container no-select">
+                        <p>Photoshop</p>
+                        <p>Illustrator</p>
+                        <p>InDesign</p>
+                    </div>
+                    <a class="continue-btn" href="/Work/FingerPrint.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mockup-container">
+                    <a href="/Work/GartenGlück.html" class="image-wrapper">
+                        <img src="Images/Mockups/Mockup_Flyer.png" alt="GartenGlück Flyer Mockup">
+                    </a>
+                    <p class="sub-header-text portfolio-title">GartenGlück Flyer</p>
+                    <div class="tag-container no-select">
+                        <p>Photoshop</p>
+                        <p>Illustrator</p>
+                        <p>InDesign</p>
+                    </div>
+                    <a class="continue-btn" href="/Work/GartenGlück.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="warning">This website is currently in beta and still under development. Many more features and improvements are coming soon...</p>
+        </section>
+        
+    </main>
+
+    <script src="code.js"></script>
+
+</body>
+</html>
