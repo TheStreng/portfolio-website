@@ -389,6 +389,10 @@ header {
     gap: 1rem;
 }
 
+.portfolio .header-container > :last-child {
+    margin-left: auto;
+}
+
 .mockup-section {
     display: none;
     opacity: 0;
