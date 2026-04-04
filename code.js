@@ -1,3 +1,15 @@
+/* -------------------- Sidebar navbar -------------------- */
+
+function showSidebar(){
+  const sidebar = document.querySelector(".sidebar-nav")
+  sidebar.style.cssText = "opacity: 1; pointer-events: auto;"
+}
+
+function hideSidebar(){
+  const sidebar = document.querySelector(".sidebar-nav")
+  sidebar.style.cssText = "opacity: 0; pointer-events: none;"
+}
+
 /* -------------------- Hide navbar on scroll -------------------- */
 
 var prevScrollpos = window.pageYOffset;

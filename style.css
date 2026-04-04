@@ -64,7 +64,13 @@ img {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto 40px;
+    max-width: 1280px;
     z-index: 0;
+    justify-self: center;
 }
 
 /* -------------------- Navbar -------------------- */
@@ -74,15 +80,21 @@ header {
     z-index: 99;
 }
 
-.left-nav {
+nav {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
-    top: 0;
-    margin-top: 1.8rem;
-    margin-left: 2.5rem;
+    width: 100%;
+    padding: 29px 40px 0 40px;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: all 0.3s;
 }
 
-.logo {
-    height: 5rem;
+nav section {
+    width: fit-content;
+    height: fit-content;
+    pointer-events: auto;
 }
 
 .mid-nav {
@@ -90,18 +102,30 @@ header {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: fit-content;
-    margin-top: 2.5rem;
+    margin-top: calc(1.8rem + 11px);
 }
 
 .right-nav {
-    position: fixed;
-    align-content: center;
-    top: 0;
-    right: 0;
-    width: fit-content;
-    margin-top: 2.5rem;
-    margin-right: 2.5rem;
+    margin-top: 11px;
+}
+
+.sidebar-nav {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar-nav a:nth-last-child(2) {
+    margin-top: 2rem;
+}
+
+.logo {
+    height: 5rem;
+    transition: all 0.3s;
 }
 
 .svg-settings {
@@ -121,6 +145,10 @@ header {
 
 #navbar {
     transition: all 0.3s;
+}
+
+.menu-btn {
+    display: none;
 }
 
 /* -------------------- Buttons -------------------- */
@@ -195,7 +223,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -203,18 +231,20 @@ header {
     margin: 0;
     color: var(--primary-color-1);
     text-transform: uppercase;
-    font-size: 0.84rem;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 700;
 }
 
 .big-header {
     margin: 0;
-    margin-top: 0.75rem;
+    margin-top: 24px;
     color: hsl(var(--primary-color));
     font-size: 4.5rem;
     font-weight: 700;
     text-align: center;
+    transition: all 0.3s;
+    line-height: 100%;
 }
 
 .big-header span {
@@ -222,17 +252,17 @@ header {
 }
 
 .about-me-text {
-    margin: 0;
-    margin-top: 0.5rem;
+    margin: 20px 0 32px 0;
     color: var(--primary-color-2);
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
+    text-align: center;
+    transition: all 0.3s;
 }
 
 .hero-btns {
     display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 16px;
 }
 
 .solo-btn {
@@ -259,7 +289,7 @@ header {
 .cv-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .svg-download {
@@ -269,9 +299,9 @@ header {
 /* -------------------- Current Technologies -------------------- */
 
 .current-technologies {
-    margin: 0 auto;
-    padding: 6rem 0 6rem 0;
-    width: 1280px;
+    margin: 0;
+    padding: 96px 0;
+    width: 100%;
 }
 
 .header-text {
@@ -279,14 +309,14 @@ header {
     color: var(--primary-color-1);
     font-size: 3rem;
     font-weight: 700;
-    line-height: 3rem;
+    line-height: 100%;
 }
 
 .description-text {
     margin: 0;
     margin-top: 1rem;
     color: hsla(var(--primary-color), 0.6);
-    font-size: 0.84rem;
+    font-size: 0.875rem;
     line-height: 1.2rem;
 }
 
@@ -313,7 +343,7 @@ header {
     display: flex;
     gap: 1.25rem;
     padding: 10px;
-    height: 3.5rem;
+    min-height: 3.5rem;
     background-color: var(--btn-bg-color);
     border-radius: 12px;
     border: 1px solid transparent;
@@ -338,6 +368,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     width: 3.5rem;
     height: 100%;
     background-color: red;
@@ -379,18 +410,23 @@ header {
 
 .portfolio {
     margin: 0 auto;
-    padding: 6rem 0 6rem 0;
-    width: 1280px;
+    padding: 128px 0;
+    width: 100%;
 }
 
 .header-container {
     display: flex;
     align-items: flex-end;
-    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.portfolio .header-container > :last-child {
-    margin-left: auto;
+.left-wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .mockup-section {
@@ -425,7 +461,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 426px;
+    aspect-ratio: 4/3;
+    height: auto;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -461,7 +498,7 @@ header {
 .tag-container {
     display: flex;
     flex-wrap: wrap;
-    width: 384px;
+    width: 68%;
     gap: 10px;
 }
 
@@ -639,16 +676,16 @@ header {
 
 .hero-section.work img {
     width: 100%;
-    height: 960px;
+    aspect-ratio: 4/3;
     border-radius: 8px;
 }
 
 .overview-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     margin: 2rem auto 8rem auto;
-    width: 1280px;
+    width: 100%;
 }
 
 .left-container h2 {
@@ -660,6 +697,7 @@ header {
 }
 
 .right-container {
+    display: none;
     color: hsl(var(--primary-color));
     line-height: 1.5rem;
     font-weight: 300;
@@ -669,6 +707,7 @@ header {
     display: flex;
     gap: 16px;
     margin-top: 40px;
+    text-align: center;
 }
 
 .btn-container .btn {
@@ -684,4 +723,135 @@ header {
 
 .btn-container svg path {
     height: 24px;
+}
+
+/* -------------------- Responsive design -------------------- */
+
+@media(max-width: 930px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .menu-btn {
+        display: block !important;
+    }
+}
+
+@media(min-width: 930px) {
+    .sidebar-nav {
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}
+
+
+
+
+@media(max-width: 1024px) {
+    .big-header {
+        font-size: 3.75rem;
+    }
+
+    .all-tech-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mockup-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 768px) {
+    .big-header {
+        font-size: 2.5rem;
+    }
+
+    .about-me-text {
+        font-size: 1rem;
+    }
+
+    .header-text {
+        font-size: 1.875rem;
+    }
+
+    .logo {
+        height: 4rem;
+        transform: translateY(8px);
+    }
+
+    .left-container h2 {
+        font-size: 1.875rem;
+    }
+}
+
+@media(max-width: 640px) {
+    nav {
+        padding: 29px 20px 0 20px;
+    }
+
+    main {
+        margin: auto 20px;
+    }
+
+    .hero-section {
+        min-height: fit-content;
+        margin: 144px auto 180px auto;
+        justify-content: flex-start;
+    }
+
+    .hero-section.work {
+        margin-bottom: 0;
+    }
+
+    /* .btn-container.work {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+    .about-me-text {
+        font-size: 0.875rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .solo-btn {
+        font-size: 0.875rem;
+    }
+
+    .all-tech-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .current-technologies {
+        padding: 64px 0;
+    }
+
+    .portfolio-title {
+        font-size: 1.5rem;
+    }
+
+    .mockup-container {
+        padding: 16px;
+    }
+
+    .tag-container {
+        width: 100%;
+        margin-bottom: 64px;
+    }
+
+    .tag-container.work {
+        margin-bottom: 0;
+    }
+
+    .continue-btn {
+        width: 1.25rem;
+        height: 1.25rem;
+        bottom: 16px;
+        left: 16px;
+    }
+
 }
